@@ -1,40 +1,23 @@
-# 🏥 Framework Hard Constraints# framework-hard-constraints
+# 🏥 Framework Hard Constraints
 
+Framework para avaliação de qualidade de respostas de LLMs aplicadas a recomendações de saúde, com foco em **hard constraints** (restrições alimentares obrigatórias).
 
+## 📋 Visão Geral
 
-Framework para avaliação de qualidade de respostas de LLMs aplicadas a recomendações de saúde, com foco em **hard constraints** (restrições alimentares obrigatórias).Framework para avaliação de qualidade de respostas com hard constraints.
+Este repositório contém prompts, datasets e estratégias para avaliar se modelos de linguagem (LLMs) respeitam restrições alimentares críticas ao fazer recomendações para pessoas com condições de saúde específicas. 
 
-
-
-## 📋 Visão Geral## 📋 Arquivos
-
-
-
-Este repositório contém prompts, datasets e estratégias para avaliar se modelos de linguagem (LLMs) respeitam restrições alimentares críticas ao fazer recomendações para pessoas com condições de saúde específicas. O objetivo é garantir que as respostas sejam **seguras**, **precisas** e **adequadas** para cada condição médica.| Arquivo | Descrição |
-
-|---------|-----------|
-
-## 📁 Estrutura do Repositório| `prompt_juiz_qualidade.txt` | Template do prompt para avaliar qualidade de respostas |
-
-| `prompt_extrator_alimentos.txt` | Template do prompt para extrair alimentos de textos e receitas |
+## 📁 Estrutura do Repositório
 
 | Arquivo | Tipo | Descrição |
-
-|---------|------|-----------|## 🎯 Critérios de Avaliação
-
+|---------|------|-----------|
 | `prompt_juiz_qualidade.txt` | Prompt | Template para avaliar a qualidade geral das respostas |
-
-| `prompt_extrator_alimentos.txt` | Prompt | Template para extrair alimentos mencionados em textos e receitas || Critério | Descrição |
-
-| `estrategias_de_prompt.csv` | Dataset | Estratégias de prompt engineering testadas para diferentes condições de saúde ||----------|-----------|
-
-| `benchmark_dataset.csv` | Dataset | Dataset de benchmark com perguntas, restrições e listas de alimentos proibidos || 
-
-## 🎯 Componentes Principais
-
-## 📝 Como Usar
+| `prompt_extrator_alimentos.txt` | Prompt | Template para extrair alimentos mencionados em textos e receitas |
+| `estrategias_de_prompt.csv` | Dataset | Estratégias de prompt engineering testadas para diferentes condições de saúde |
+| `benchmark_dataset.csv` | Dataset | Dataset de benchmark com perguntas, restrições e listas de alimentos proibidos |
 
 ---
+
+## 🎯 Componentes Principais
 
 ### 1. 🧪 Estratégias de Prompt (`estrategias_de_prompt.csv`)
 
@@ -71,7 +54,7 @@ Este repositório contém prompts, datasets e estratégias para avaliar se model
 
 ---
 
-### 4. 📊 Dataset: Benchmark (`benchmark_dataset.csv`)
+### 2. 📊 Dataset: Benchmark (`benchmark_dataset.csv`)
 
 **Conteúdo:** 19 casos de teste com perguntas, restrições e listas de alimentos proibidos.
 
@@ -96,7 +79,4 @@ Este repositório contém prompts, datasets e estratégias para avaliar se model
 - Avaliar a capacidade do modelo de respeitar restrições críticas
 - Comparar eficácia de diferentes estratégias de prompt
 
-
-## ⚠️ Aviso Importante
-
-Este framework é para fins de **pesquisa e desenvolvimento**. As recomendações geradas por LLMs devem sempre ser revisadas por profissionais de saúde qualificados antes de serem aplicadas na prática.
+---
