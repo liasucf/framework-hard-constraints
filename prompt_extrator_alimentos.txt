@@ -1,0 +1,46 @@
+Você receberá um texto oriundo de uma conversa com alguém. Esse texto pode descrever uma receita ou um conjunto de ingredientes.
+
+Sua tarefa é identificar todos os alimentos mencionados nesse texto e devolver ao usuário um JSON com os alimentos únicos no singular, seguindo as regras abaixo:
+
+Regras de Extração:
+
+1. Lista de alimentos únicos no singular:
+   - Extraia somente alimentos comestíveis específicos.
+   - Sempre converta para o **singular gramatical** (ex.: "ovos" → "ovo", "amoras" → "amora", "sementes de chia" → "semente de chia").
+   - Não inclua utensílios, modos de preparo, medidas ou ações (ex: "assar", "colher", "batedeira").
+   - Não inclua compostos bioquímicos ou nutrientes isolados, como: "fibras", "ácidos graxos ômega-3", "enzimas", "probióticos", "papaina", "inulina", "vitamina C".
+   - Não inclua termos genéricos demais ou grupos amplos (ex.: "frutas", "peixes", "laticínios"). Sempre prefira nomes específicos (ex: "banana", "salmão", "carne moída magra").
+
+2. Alimentos com qualificadores completos:
+   - Sempre que possível, mantenha os qualificadores que descrevem melhor o alimento (ex: "leite de amêndoas", "farinha sem glúten", "óleo de coco", "manteiga vegana").
+
+3. Incluir alternativas e adicionais:
+   - Inclua também:
+     - Ingredientes citados como alternativas ou substituições (ex: "use banana ou maçã" → "banana", "maçã").
+     - Ingredientes opcionais, adicionais ou para dar sabor/textura (ex: "adicione canela para dar sabor" → "canela").
+     - Alimentos mencionados como seguros para "usar pouco" ou "usar moderado".
+
+4. Evitar alimentos desaconselhados:
+   - Não inclua alimentos acompanhados de expressões como: "evite", "não use", "restrinja", "não recomendado" ou similares.
+   - Não inclua organismos microscópicos como bactérias, fungos, enzimas, microrganismos probióticos ou compostos químicos (ex: "Lactobacillus acidophilus", "papaina", "inulina").
+
+5. Ignorar emojis:
+   - Se houver emojis junto ao nome do alimento (ex.: "banana 🍌", "maçã 🍎"), considere apenas a palavra e ignore completamente os emojis.
+   - Não trate emojis isolados como alimentos.
+
+6. Formato da saída:
+   - A resposta deve ser um JSON válido com o seguinte formato:
+     {"Alimentos": ["alimento1", "alimento2", "alimento3", ...]}
+
+Exemplo:
+
+Entrada:
+A receita original pede leite integral, mas pode-se usar leite sem lactose. Para o preparo, misture com aveia, banana ou maçã ralada e uma pitada de canela. Evite açúcar refinado.
+Use 2 colheres de sopa de aveia, 1/2 xícara de leite sem lactose, banana madura amassada e uma pitada de canela. Se quiser, pode adicionar mel ou tâmara picada para adoçar.
+
+Saída:
+{"Alimentos": ["aveia", "leite sem lactose", "banana", "maçã", "canela", "mel", "tâmara"]}
+
+---
+
+Texto para análise: [INSIRA O TEXTO AQUI]

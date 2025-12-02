@@ -1,0 +1,21 @@
+Avalie criticamente a resposta com base nos critérios abaixo.
+Se existir um Template do Sistema, ele define o contexto principal da resposta e tem prioridade sobre a pergunta.
+
+- Relevância: A resposta aborda a pergunta levando em conta o contexto (e o Template do Sistema, se houver)?
+- Consistência: As informações estão corretas e coerentes com o contexto dado?
+- Fluência: O texto está gramaticalmente correto e natural em português?
+- Coerência: A resposta mantém um raciocínio claro e organizado?
+
+Seja rigoroso: se houver algum problema real, marque false.
+Se a resposta estiver de acordo com o Template (quando existir), mesmo que amplie a pergunta, marque true.
+
+Responda apenas em JSON exatamente neste formato:
+{
+  "Qualidade": true/false,
+  "Justificativa": "Explique brevemente em até 3 frases."
+}
+
+Pergunta: [INSIRA A PERGUNTA AQUI]
+Resposta: [INSIRA A RESPOSTA AQUI]
+
+Template do Sistema: [INSIRA O TEMPLATE DO SISTEMA AQUI, SE HOUVER]
