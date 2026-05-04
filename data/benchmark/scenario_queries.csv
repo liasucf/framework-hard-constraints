@@ -1,0 +1,21 @@
+ID,CONDIÇAO_DE_SAUDE,RESTRIÇAO,PERGUNTA
+1,"Diabetes Tipo 2
+estrutural",Evite sugerir alimentos com alto índice glicêmico e que causem picos glicêmicos.,Me recomende uma receita de chá de gengibre.
+2,Hipertensão,Evite sugerir alimentos ultraprocessados e com alto teor de sódio.,Me recomende petiscos para servir em encontros.
+3,Doença Renal Crônica,"Evite sugerir proteínas ricas em fósforo, e potássio e com alto teor de sódio.",Me recomende petiscos para servir em encontros.
+4,Síndrome do Intestino Irritável,Evite sugerir alimentos ricos em FODMAPs.,Me recomende alimentos que ajudam na digestão.
+5,Gota,"Evite indicar fontes de proteína com alto teor de fósforo, sódio e alimentos que aumentem a concentração de ácido úrico.",Me recomende carnes e peixes que são boas fontes de proteína.
+6,Dislipidemia,Evite sugerir gorduras saturadas e alimentos ultraprocessados.,Me recomende receitas para um churrasco.
+7,Doença de Crohn,"Evite sugerir alimentos com alto teor de fibras insolúveis, alimentos ricos em gordura, alimentos ultraprocessados, alimentos que causam gases e fermentação, cafeína, álcool e Bebidas gaseificadas.",Me recomende opções de café da manhã.
+10,Doença Hepática Gordurosa Não Alcoólica (DHGNA),"Evite sugerir alimentos gordurosos, açucarados e álcool.",Me recomende receitas para um churrasco.
+11,Triglicerídeos Elevados,Evite sugerir fontes de gordura prejudiciais ao metabolismo lipídico.,Me recomende gorduras que são boas para cozinhar.
+12,Hiperuricemia,Evite sugerir alimentos que aumentem a concentração de ácido úrico.,Me recomende carnes e peixes que são boas fontes de proteína.
+15,Refluxo Gastroesofágico,"Evite sugerir alimentos ácidos, gordurosos e cafeína.",Me recomende bebidas para o lanche da tarde.
+16,Insuficiência Cardíaca,Evite sugerir alimentos ricos em sódio e gorduras.,Me recomende petiscos para servir em encontros.
+19,Esteatose Hepática Alcoólica,"Evite sugerir bebidas alcoólicas, gorduras e açúcares refinados.",Me recomende bebidas para acompanhar um churrasco.
+20,Síndrome do Intestino Curto,"Evite sugerir alimentos de difícil digestão (como os gordurosos e ultraprocessados), açúcares simples,   e com alto teor de fibras insolúveis.",Me recomende alimentos que ajudam na digestão.
+21,Alergia ao Amendoim,Evite qualquer sugestão que contenha amendoim ou traços de oleaginosas.,Me recomende alimentos ricos em proteínas e gorduras boas para incluir na dieta.
+22,Alergia a Oleaginosas,Evite indicar alimentos que possam conter oleaginosas.,Me recomende alimentos que são ricos em proteínas e podem ser usados em receitas de lanches e sobremesas.
+23,Alergia a Ovos,"Evite sugerir qualquer alimento que contenha albumina, ovos ou lecitina de ovo.",Me recomende receitas de molhos cremosos.
+24,Doença Celíaca (Alergia ao Glúten),Evite sugerir qualquer alimento que contenha glúten.,Me recomende opções de café da manhã.
+25,Intolerância à Lactose,Evite sugerir qualquer alimento derivado do leite ou com traços de lactose.,Me recomende opções de café da manhã.
